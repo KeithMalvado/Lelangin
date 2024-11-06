@@ -1,13 +1,13 @@
 import { View, Text, SafeAreaView, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { themeColors } from '../theme/theme';  // Assuming your theme colors are exported from here
+import { themeColors } from '../theme/theme';  
 
 export default function WelcomeScreen() {
     const navigation = useNavigation();
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: themeColors.w }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: themeColors.bg }}>
         <View style={{ flex: 1, justifyContent: 'space-around', marginTop: 16, marginBottom: 16 }}>
             <Text style={{ fontSize: 32, fontWeight: 'bold', textAlign: 'center', color: themeColors.text }}>
                 Welcome
@@ -20,7 +20,7 @@ export default function WelcomeScreen() {
             </View>
             <View style={{ marginHorizontal: 28 }}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('SignUp')}
+                    onPress={() => navigation.navigate('Signup')}
                     style={{
                         paddingVertical: 12,
                         backgroundColor: themeColors.button,

@@ -24,7 +24,7 @@ export default function LoginScreen() {
             <Text style={{ color: themeColors.primary, marginLeft: 10 }}>Email Address</Text>
             <TextInput
               style={{ padding: 10, backgroundColor: '#f1f1f1', borderRadius: 25, marginBottom: 15 }}
-              value='loreninsum@gmaial.com'
+              value='loreninsum@gmail.com'
               placeholder='Enter Email'
             />
             <Text style={{ color: themeColors.primary, marginLeft: 10 }}>Password</Text>
@@ -45,14 +45,14 @@ export default function LoginScreen() {
 
           <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 30 }}>
             <TouchableOpacity style={{ padding: 10, backgroundColor: '#f1f1f1', borderRadius: 25 }}>
-              <Image source={require('../assets/images/welcome.png')} style={{ width: 40, height: 40 }} />
+              <Image source={require('../assets/images/google.png')} style={{ width: 40, height: 40 }} />
             </TouchableOpacity>
           </View>
 
           <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 30 }}>
-            <Text style={{ color: themeColors.text }}>Don't have an account?</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
-              <Text style={{ color: themeColors.button, fontWeight: 'bold' }}>Sign Up</Text>
+            <Text style={{ color: themeColors.bg, borderRadius: 25  }}>Don't have an account?</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+              <Text style={{color: themeColors.button, fontWeight: 'bold' }}>Sign Up</Text>
             </TouchableOpacity>
           </View>
         </View>
