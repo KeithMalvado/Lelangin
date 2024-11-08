@@ -5,13 +5,12 @@ import { ArrowLeftIcon } from 'react-native-heroicons/solid';
 import { useNavigation } from '@react-navigation/native';
 import TambahBarang from './barang/TambahBarang';
 import LihatBarang from './barang/LihatBarang';
-import SignUpScreen from './SignUpScreen'; // Pastikan untuk memasukkan SignUpScreen sesuai keperluan
+import SignUpScreen from './SignUpScreen'; 
 
 export default function HomeScreen() {
   const navigation = useNavigation();
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // Fungsi untuk menangani aksi setelah barang ditambahkan
   const handleTambahBarang = (name) => {
     console.log('Barang ditambahkan');
   };

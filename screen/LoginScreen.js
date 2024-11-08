@@ -9,33 +9,33 @@ export default function LoginScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: themeColors.bg }}>
       <SafeAreaView style={{ flex: 1 }}>
-        <View style={{ flexDirection: 'row', justifyContent: 'flex-start' }}>
-          <TouchableOpacity onPress={() => navigation.goBack()} style={{ backgroundColor: 'yellow', padding: 10, borderBottomLeftRadius: 20, marginLeft: 20 }}>
-            <ArrowLeftIcon size={20} color="black" />
+      <View style={{flexDirection: 'row', justifyContent: 'flex-start'}}>
+          <TouchableOpacity
+            onPress={()=>navigation.goBack()}
+            style={{backgroundColor: themeColors.bg, padding: 10, borderBottomLeftRadius: 20, marginLeft: 16}}
+          >
+            <ArrowLeftIcon size="20" color={themeColors.textSecondary}/>
           </TouchableOpacity>
         </View>
-
         <View style={{ alignItems: 'center' }}>
           <Image source={require('../assets/images/welcome.png')} style={{ width: 200, height: 200 }} />
         </View>
 
         <View style={{ flex: 1, backgroundColor: 'white', paddingHorizontal: 30, paddingTop: 30, borderTopLeftRadius: 50, borderTopRightRadius: 50 }}>
           <View style={{ marginBottom: 20 }}>
-            <Text style={{ color: themeColors.primary, marginLeft: 10 }}>Email Address</Text>
+            <Text style={{ color: themeColors.primary, marginLeft: 10 }}>Alamat Email</Text>
             <TextInput
               style={{ padding: 10, backgroundColor: '#f1f1f1', borderRadius: 25, marginBottom: 15 }}
-              value='loreninsum@gmail.com'
-              placeholder='Enter Email'
+              placeholder='Masukan Alamat Email'
             />
             <Text style={{ color: themeColors.primary, marginLeft: 10 }}>Password</Text>
             <TextInput
               style={{ padding: 10, backgroundColor: '#f1f1f1', borderRadius: 25 }}
               secureTextEntry
-              value='member123'
-              placeholder='Enter Password'
+              placeholder='Masukan Password'
             />
             <TouchableOpacity style={{ alignItems: 'flex-end', marginVertical: 10 }}>
-              <Text style={{ color: themeColors.primary }}>Forgot Password?</Text>
+              <Text style={{ color: themeColors.primary }}>Lupa Password?</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={{ paddingVertical: 15, backgroundColor: themeColors.button, borderRadius: 25 }}>
@@ -50,9 +50,9 @@ export default function LoginScreen() {
           </View>
 
           <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 30 }}>
-            <Text style={{ color: themeColors.bg, borderRadius: 25  }}>Don't have an account?</Text>
+            <Text style={{ color: themeColors.bg, borderRadius: 25  }}>Belum Memiliki Akun?</Text>
             <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-              <Text style={{color: themeColors.button, fontWeight: 'bold' }}>Sign Up</Text>
+              <Text style={{color: themeColors.button, fontWeight: 'bold' }}>Daftar</Text>
             </TouchableOpacity>
           </View>
         </View>

@@ -61,19 +61,14 @@ export default function LihatBarang({ setSelectedItem }) {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: themeColors.bg }}>
-      <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 16 }}>
-        <TouchableOpacity
-          onPress={handleGoBack}
-          style={{
-            backgroundColor: themeColors.button,
-            padding: 10,
-            borderBottomLeftRadius: 20,
-            marginLeft: 16,
-          }}
-        >
-          <ArrowLeftIcon size="20" color={themeColors.textSecondary} />
-        </TouchableOpacity>
-      </View>
+        <View style={{flexDirection: 'row', justifyContent: 'flex-start'}}>
+          <TouchableOpacity
+            onPress={()=>navigation.goBack()}
+            style={{backgroundColor: themeColors.bg, padding: 10, borderBottomLeftRadius: 20, marginLeft: 16}}
+          >
+            <ArrowLeftIcon size="20" color={themeColors.textSecondary}/>
+          </TouchableOpacity>
+        </View>
 
       <View
         style={{
