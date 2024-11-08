@@ -8,5 +8,6 @@ export const themeColors = {
     textSecondary: '#000000', 
     border: '#9e9e9e', 
     greyBackground: '#f5f5f5', 
+    error: '#dc3545',
   };
   
