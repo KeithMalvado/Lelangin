@@ -10,7 +10,7 @@ export default function WelcomeScreen() {
         <SafeAreaView style={{ flex: 1, backgroundColor: themeColors.bg }}>
             <View style={{ flex: 1, justifyContent: 'space-around', marginTop: 16, marginBottom: 16 }}>
                 <Text style={{ fontSize: 32, fontWeight: 'bold', textAlign: 'center', color: themeColors.text }}>
-                    Welcome
+                    Lelangin
                 </Text>
                 <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
                     <Image 
@@ -20,7 +20,7 @@ export default function WelcomeScreen() {
                 </View>
                 <View style={{ marginHorizontal: 28 }}>
                     {/* Hapus tombol Edit Barang dan Delete Barang */}
-                    <TouchableOpacity
+                    {/* <TouchableOpacity
                         onPress={() => navigation.navigate('LihatBarang')}
                         style={{
                             paddingVertical: 12,
@@ -45,7 +45,7 @@ export default function WelcomeScreen() {
                         <Text style={{ fontSize: 20, fontWeight: 'bold', textAlign: 'center', color: themeColors.textSecondary }}>
                             Tambah Barang
                         </Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                     <TouchableOpacity
                         onPress={() => navigation.navigate('Signup')}
                         style={{
@@ -56,13 +56,13 @@ export default function WelcomeScreen() {
                         }}
                     >
                         <Text style={{ fontSize: 20, fontWeight: 'bold', textAlign: 'center', color: themeColors.textSecondary }}>
-                            SignUp
+                            Daftar
                         </Text>
                     </TouchableOpacity>
                     <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 12 }}>
                         <Text style={{ color: themeColors.text }}>Sudah memiliki akun?</Text>
                         <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-                            <Text style={{ fontWeight: 'bold', color: themeColors.primary }}> Login</Text>
+                            <Text style={{ fontWeight: 'bold', color: themeColors.primary }}> Masuk</Text>
                         </TouchableOpacity>
                     </View>
                 </View>

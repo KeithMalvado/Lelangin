@@ -7,12 +7,12 @@ import { useNavigation } from '@react-navigation/native';
 export default function SignUpScreen() {
   const navigation = useNavigation();
   return (
-    <View style={{flex: 1, backgroundColor: themeColors.button}}>
+    <View style={{flex: 1, backgroundColor: themeColors.bg}}>
       <SafeAreaView style={{flex: 1}}>
         <View style={{flexDirection: 'row', justifyContent: 'flex-start'}}>
           <TouchableOpacity
             onPress={()=>navigation.goBack()}
-            style={{backgroundColor: themeColors.button, padding: 10, borderBottomLeftRadius: 20, marginLeft: 16}}
+            style={{backgroundColor: themeColors.bg, padding: 10, borderBottomLeftRadius: 20, marginLeft: 16}}
           >
             <ArrowLeftIcon size="20" color={themeColors.textSecondary}/>
           </TouchableOpacity>
@@ -27,22 +27,22 @@ export default function SignUpScreen() {
               style={{padding: 16, backgroundColor: themeColors.secondary, color: themeColors.textSecondary, borderRadius: 16, marginBottom: 12}}
               placeholder='Masukan Nama Lengkap'
             />
-            <Text style={{color: themeColors.primary, marginBottom: 8}}>Email Address</Text>
+            <Text style={{color: themeColors.primary, marginBottom: 8}}>Alamat Email</Text>
             <TextInput
               style={{padding: 16, backgroundColor: themeColors.secondary, color: themeColors.textSecondary, borderRadius: 16, marginBottom: 12}}
-              placeholder='Enter Email'
+              placeholder='Masukan Email'
             />
             <Text style={{color: themeColors.primary, marginBottom: 8}}>Password</Text>
             <TextInput
               style={{padding: 16, backgroundColor: themeColors.secondary, color: themeColors.textSecondary, borderRadius: 16, marginBottom: 16}}
               secureTextEntry
-              placeholder='Enter Password'
+              placeholder='Masukan Password'
             />
             <TouchableOpacity style={{alignItems: 'flex-end', marginBottom: 16}}>
               <Text style={{color: themeColors.textSecondary}}>Lupa Password?</Text>
             </TouchableOpacity>
             <TouchableOpacity style={{paddingVertical: 12, backgroundColor: themeColors.button, borderRadius: 16, marginBottom: 16}}>
-              <Text style={{fontSize: 20, fontWeight: 'bold', textAlign: 'center', color: themeColors.textSecondary}}>Sign Up</Text>
+              <Text style={{fontSize: 20, fontWeight: 'bold', textAlign: 'center', color: themeColors.textSecondary}}>Daftar</Text>
             </TouchableOpacity>
           </View>
         </View>
